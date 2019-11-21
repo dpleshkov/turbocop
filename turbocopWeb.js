@@ -41,7 +41,7 @@
         document.getElementById('credit_card_month').value = config.exp_month;
         document.getElementById('credit_card_year').value = config.exp_year;
         document.querySelector('input[placeholder="CVV"]').value = config.cvv;
-        document.querySelector('input[value="process payment"]').click();
+        document.getElementsByClassName("iCheck-helper")[1].click();
     }
 
     function checkoutProduct(evt) {
