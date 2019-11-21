@@ -19,11 +19,17 @@
     function buyProduct(evt) {
         document.getElementsByName("commit")[0].click();
     }
+    function checkoutProduct(evt) {
+        document.getElementsByClassName("checkout")[0].click();
+    }
     document.body.onkeydown = function (e) {
         var letter = String.fromCharCode(e.keyCode);
         console.log(letter, "was pressed");
         if (letter == "Q") {
             buyProduct();
+        }
+        if (letter == "Z") {
+            checkProduct();
         }
     };
 })();
