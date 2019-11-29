@@ -15,6 +15,7 @@ class SupremeWebParser:
         self.target_style_names = []
         self.target_size_ids = []
         self.target_size_names = []
+        self.target_matches = 0
         self.matches = 0
 
     def scan_for_style(self, item_id, category):
@@ -27,16 +28,38 @@ class SupremeWebParser:
                         for size_id in self.target_size_ids:
                             if size["id"] == size_id:
                                 print("Found matching style")
-                                web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category, item_id, style_id, size_id))
                                 self.matches += 1
+                                if self.matches == self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s&checkout" % (category.lower(), item_id, style_id, size_id))
+                                elif self.matches < self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category.lower(), item_id, style_id, size_id))
                         for size_name in self.target_size_names:
                             if size["name"] == size_name:
                                 print("Found matching style")
-                                web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category, item_id, style_id, size["id"]))
                                 self.matches += 1
+                                if self.matches == self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s&checkout" % (category.lower(), item_id, style_id, size["id"]))
+                                elif self.matches < self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category.lower(), item_id, style_id, size["id"]))
             for style_name in self.target_style_names:
                 if style["name"] == style_name:
-                    web_open("https://www.supremenewyork.com/%s/%s/%s" % (category, item_id, style["id"]))
+                    for size in style["sizes"]:
+                        for size_id in self.target_size_ids:
+                            if size["id"] == size_id:
+                                print("Found matching style")
+                                self.matches += 1
+                                if self.matches == self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s&checkout" % (category.lower(), item_id, style["id"], size_id))
+                                elif self.matches < self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category.lower(), item_id, style["id"], size_id))
+                        for size_name in self.target_size_names:
+                            if size["name"] == size_name:
+                                print("Found matching style")
+                                self.matches += 1
+                                if self.matches == self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s&checkout" % (category.lower(), item_id, style["id"], size["id"]))
+                                elif self.matches < self.target_matches:
+                                    web_open("https://www.supremenewyork.com/shop/%s/%s/%s?turbocop_size_id=%s" % (category.lower(), item_id, style["id"], size["id"]))
 
     def scan_for_item(self):
         mobile_stock = urlopen("https://www.supremenewyork.com/mobile_stock.json").read().decode()
