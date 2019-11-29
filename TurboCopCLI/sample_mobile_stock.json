@@ -1,0 +1,690 @@
+{
+    "unique_image_url_prefixes": [],
+    "products_and_categories": {
+        "Bags": [{
+            "name": "Duffle Bag",
+            "id": 172614,
+            "image_url": "//assets.supremenewyork.com/177697/ca/2S7XinatYtQ.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177697/rc/2S7XinatYtQ.jpg",
+            "price": 13800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 33,
+            "category_name": "Bags"
+        }, {
+            "name": "Backpack",
+            "id": 172607,
+            "image_url": "//assets.supremenewyork.com/177657/ca/I42ac8rxvS8.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177657/rc/I42ac8rxvS8.jpg",
+            "price": 14800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 34,
+            "category_name": "Bags"
+        }, {
+            "name": "Shoulder Bag",
+            "id": 172595,
+            "image_url": "//assets.supremenewyork.com/128211/ca/0OBKd_jn1kI.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/128211/rc/0OBKd_jn1kI.jpg",
+            "price": 4800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 35,
+            "category_name": "Bags"
+        }, {
+            "name": "Waist Bag",
+            "id": 172638,
+            "image_url": "//assets.supremenewyork.com/177675/ca/zDkt-beKeWI.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177675/rc/zDkt-beKeWI.jpg",
+            "price": 8800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 36,
+            "category_name": "Bags"
+        }, {
+            "name": "Small Zip Pouch",
+            "id": 172618,
+            "image_url": "//assets.supremenewyork.com/178521/ca/rK_Cs0JEcDI.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178521/rc/rK_Cs0JEcDI.jpg",
+            "price": 3000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 37,
+            "category_name": "Bags"
+        }],
+        "Skate": [{
+            "name": "\"BLESSED” DVD",
+            "id": 172610,
+            "image_url": "//assets.supremenewyork.com/178756/ca/cve3MJfquog.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178756/rc/cve3MJfquog.jpg",
+            "price": 2000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 45,
+            "category_name": "Skate"
+        }, {
+            "name": "Martin Wong/Supreme Iglesia Pentecostal Skateboard",
+            "id": 172866,
+            "image_url": "//assets.supremenewyork.com/180469/ca/iMeOihGvV9Q.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180469/rc/iMeOihGvV9Q.jpg",
+            "price": 6000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 46,
+            "category_name": "Skate"
+        }, {
+            "name": "Martin Wong/Supreme Big Heat Skateboard",
+            "id": 172874,
+            "image_url": "//assets.supremenewyork.com/180445/ca/FF45JQGMRCs.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180445/rc/FF45JQGMRCs.jpg",
+            "price": 6000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 47,
+            "category_name": "Skate"
+        }, {
+            "name": "Disturbed Skateboard",
+            "id": 172644,
+            "image_url": "//assets.supremenewyork.com/177843/ca/Fghd7SSRoSE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177843/rc/Fghd7SSRoSE.jpg",
+            "price": 5000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 48,
+            "category_name": "Skate"
+        }, {
+            "name": "Delta Logo Skateboard",
+            "id": 172784,
+            "image_url": "//assets.supremenewyork.com/179770/ca/9-pFJoDBxeE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/179770/rc/9-pFJoDBxeE.jpg",
+            "price": 5000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 49,
+            "category_name": "Skate"
+        }, {
+            "name": "Supreme®/Independent® Truck",
+            "id": 172596,
+            "image_url": "//assets.supremenewyork.com/178720/ca/zv_hGJQoJjE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178720/rc/zv_hGJQoJjE.jpg",
+            "price": 5000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 50,
+            "category_name": "Skate"
+        }, {
+            "name": "Supreme®/Spitfire® OG Classic Wheels (Set of 4)",
+            "id": 172868,
+            "image_url": "//assets.supremenewyork.com/180509/ca/g_yb2axmvCA.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180509/rc/g_yb2axmvCA.jpg",
+            "price": 3000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 51,
+            "category_name": "Skate"
+        }, {
+            "name": "Supreme®/Spitfire® Classic Wheels (Set of 4)",
+            "id": 172604,
+            "image_url": "//assets.supremenewyork.com/178717/ca/5SR1ZchA1FI.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178717/rc/5SR1ZchA1FI.jpg",
+            "price": 3000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 52,
+            "category_name": "Skate"
+        }],
+        "Pants": [{
+            "name": "Crown Chino Pant",
+            "id": 172774,
+            "image_url": "//assets.supremenewyork.com/176623/ca/1TN0BW7Pblo.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176623/rc/1TN0BW7Pblo.jpg",
+            "price": 14800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 21,
+            "category_name": "Pants"
+        }, {
+            "name": "Paneled Warm Up Pant",
+            "id": 172850,
+            "image_url": "//assets.supremenewyork.com/178465/ca/ZA9RmO5PHKw.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178465/rc/ZA9RmO5PHKw.jpg",
+            "price": 12800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 22,
+            "category_name": "Pants"
+        }, {
+            "name": "Work Pant",
+            "id": 172599,
+            "image_url": "//assets.supremenewyork.com/178293/ca/ePKM1mWgLdM.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178293/rc/ePKM1mWgLdM.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 23,
+            "category_name": "Pants"
+        }, {
+            "name": "Washed Regular Jean",
+            "id": 172639,
+            "image_url": "//assets.supremenewyork.com/178296/ca/Vy3wZCI2gNo.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178296/rc/Vy3wZCI2gNo.jpg",
+            "price": 14800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 24,
+            "category_name": "Pants"
+        }, {
+            "name": "Rigid Slim Jean",
+            "id": 172602,
+            "image_url": "//assets.supremenewyork.com/176626/ca/Nh6HMKvZqeM.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176626/rc/Nh6HMKvZqeM.jpg",
+            "price": 15800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 25,
+            "category_name": "Pants"
+        }],
+        "Accessories": [{
+            "name": "Supreme (Vol 2) Book ",
+            "id": 172890,
+            "image_url": "//assets.supremenewyork.com/180530/ca/x-FK_pgtJeE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180530/rc/x-FK_pgtJeE.jpg",
+            "price": 5000,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 0,
+            "category_name": "Accessories"
+        }, {
+            "name": "Plated Dumbbell",
+            "id": 172895,
+            "image_url": "//assets.supremenewyork.com/178458/ca/0lHRUqLAsZE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178458/rc/0lHRUqLAsZE.jpg",
+            "price": 14800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 38,
+            "category_name": "Accessories"
+        }, {
+            "name": "Pledge Allegiance Pin",
+            "id": 172858,
+            "image_url": "//assets.supremenewyork.com/177983/ca/QNLxwdypteM.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177983/rc/QNLxwdypteM.jpg",
+            "price": 800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 39,
+            "category_name": "Accessories"
+        }, {
+            "name": "Supreme®/Hanes® Thermal Crew (1 Pack)",
+            "id": 172815,
+            "image_url": "//assets.supremenewyork.com/180048/ca/C7bCOBLHllQ.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180048/rc/C7bCOBLHllQ.jpg",
+            "price": 2600,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 40,
+            "category_name": "Accessories"
+        }, {
+            "name": "Supreme®/Hanes® Tagless Tees (3 Pack)",
+            "id": 172640,
+            "image_url": "//assets.supremenewyork.com/178734/ca/77iFuonWm0s.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178734/rc/77iFuonWm0s.jpg",
+            "price": 2800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 41,
+            "category_name": "Accessories"
+        }, {
+            "name": "Supreme®/Hanes® Thermal Pant (1 Pack)",
+            "id": 172808,
+            "image_url": "//assets.supremenewyork.com/180050/ca/zRPEld80CTw.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180050/rc/zRPEld80CTw.jpg",
+            "price": 2600,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 42,
+            "category_name": "Accessories"
+        }, {
+            "name": "Supreme®/Hanes® Boxer Briefs (4 Pack)",
+            "id": 172645,
+            "image_url": "//assets.supremenewyork.com/178738/ca/-JjUmH62j4w.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178738/rc/-JjUmH62j4w.jpg",
+            "price": 3600,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 43,
+            "category_name": "Accessories"
+        }, {
+            "name": "Supreme®/Hanes® Crew Socks (4 Pack)",
+            "id": 172647,
+            "image_url": "//assets.supremenewyork.com/178748/ca/I7OpkfBJvqY.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178748/rc/I7OpkfBJvqY.jpg",
+            "price": 2000,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 44,
+            "category_name": "Accessories"
+        }],
+        "Jackets": [{
+            "name": "Ganesh Faux Fur Jacket",
+            "id": 172887,
+            "image_url": "//assets.supremenewyork.com/178392/ca/gY420D_LY-0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178392/rc/gY420D_LY-0.jpg",
+            "price": 34800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 1,
+            "category_name": "Jackets"
+        }, {
+            "name": "Pinstripe Panel Sports Parka",
+            "id": 172893,
+            "image_url": "//assets.supremenewyork.com/178384/ca/iybBngzvU-w.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178384/rc/iybBngzvU-w.jpg",
+            "price": 23800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 2,
+            "category_name": "Jackets"
+        }, {
+            "name": "Leather Collar Puffy Jacket",
+            "id": 172870,
+            "image_url": "//assets.supremenewyork.com/176240/ca/Hue-edGmetc.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176240/rc/Hue-edGmetc.jpg",
+            "price": 26800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 3,
+            "category_name": "Jackets"
+        }, {
+            "name": "Supreme®/Schott® Leather Overcoat",
+            "id": 172839,
+            "image_url": "//assets.supremenewyork.com/176309/ca/5S4l2knwC6M.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176309/rc/5S4l2knwC6M.jpg",
+            "price": 79800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 4,
+            "category_name": "Jackets"
+        }, {
+            "name": "Upland Fleece Jacket",
+            "id": 172830,
+            "image_url": "//assets.supremenewyork.com/176086/ca/XRwc4SLLlQE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176086/rc/XRwc4SLLlQE.jpg",
+            "price": 22800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 5,
+            "category_name": "Jackets"
+        }, {
+            "name": "Cotton Field Jacket",
+            "id": 172841,
+            "image_url": "//assets.supremenewyork.com/176218/ca/hlg1BFhcF8o.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176218/rc/hlg1BFhcF8o.jpg",
+            "price": 26800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 6,
+            "category_name": "Jackets"
+        }],
+        "Tops/Sweaters": [{
+            "name": "Stripe Velour L/S Polo",
+            "id": 172882,
+            "image_url": "//assets.supremenewyork.com/177134/ca/6OGiCk5r0mc.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177134/rc/6OGiCk5r0mc.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 13,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "Ganesh L/S Thermal",
+            "id": 172886,
+            "image_url": "//assets.supremenewyork.com/176982/ca/-_vUSd9JrZ4.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176982/rc/-_vUSd9JrZ4.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 14,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "L/S Pocket Tee",
+            "id": 172859,
+            "image_url": "//assets.supremenewyork.com/177091/ca/VOEoGmyV-xw.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177091/rc/VOEoGmyV-xw.jpg",
+            "price": 7800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 15,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "Bow Waffle Thermal",
+            "id": 172857,
+            "image_url": "//assets.supremenewyork.com/177182/ca/CQ31_jiPvJE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177182/rc/CQ31_jiPvJE.jpg",
+            "price": 9800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 16,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "Crest Label Pocket Tee",
+            "id": 172835,
+            "image_url": "//assets.supremenewyork.com/177062/ca/FJRz34egXbA.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177062/rc/FJRz34egXbA.jpg",
+            "price": 6800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 17,
+            "category_name": "Tops/Sweaters"
+        }],
+        "Shirts": [{
+            "name": "Stripe Shirt",
+            "id": 172891,
+            "image_url": "//assets.supremenewyork.com/176415/ca/TONglf3nq-I.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176415/rc/TONglf3nq-I.jpg",
+            "price": 12800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 7,
+            "category_name": "Shirts"
+        }, {
+            "name": "1-800 Buffalo Plaid Shirt",
+            "id": 172849,
+            "image_url": "//assets.supremenewyork.com/178452/ca/QOh_mi1ocoY.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178452/rc/QOh_mi1ocoY.jpg",
+            "price": 13800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 8,
+            "category_name": "Shirts"
+        }],
+        "T-Shirts": [{
+            "name": "Martin Wong/Supreme Attorney Street L/S Tee",
+            "id": 172878,
+            "image_url": "//assets.supremenewyork.com/180450/ca/YIWUfoIB9i4.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180450/rc/YIWUfoIB9i4.jpg",
+            "price": 5800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 18,
+            "category_name": "T-Shirts"
+        }, {
+            "name": "Martin Wong/Supreme Big Heat Tee",
+            "id": 172867,
+            "image_url": "//assets.supremenewyork.com/180437/ca/li_jo_OxIj4.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180437/rc/li_jo_OxIj4.jpg",
+            "price": 4800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 19,
+            "category_name": "T-Shirts"
+        }, {
+            "name": "Martin Wong/Supreme Iglesia Pentecostal Tee",
+            "id": 172860,
+            "image_url": "//assets.supremenewyork.com/180421/ca/1YZI_nYHtpo.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180421/rc/1YZI_nYHtpo.jpg",
+            "price": 4800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 20,
+            "category_name": "T-Shirts"
+        }],
+        "Sweatshirts": [{
+            "name": "Disturbed Zip Up Hooded Sweatshirt",
+            "id": 172883,
+            "image_url": "//assets.supremenewyork.com/176891/ca/UnFGLpvE8o0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176891/rc/UnFGLpvE8o0.jpg",
+            "price": 16800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 9,
+            "category_name": "Sweatshirts"
+        }, {
+            "name": "NY Hooded Sweatshirt",
+            "id": 172894,
+            "image_url": "//assets.supremenewyork.com/176939/ca/d2HKE1xUVD0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176939/rc/d2HKE1xUVD0.jpg",
+            "price": 16800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 10,
+            "category_name": "Sweatshirts"
+        }, {
+            "name": "Mountain Crewneck",
+            "id": 172865,
+            "image_url": "//assets.supremenewyork.com/176759/ca/GxGkDQE4ukk.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176759/rc/GxGkDQE4ukk.jpg",
+            "price": 15800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 11,
+            "category_name": "Sweatshirts"
+        }, {
+            "name": "Rhinestone Script Hooded Sweatshirt",
+            "id": 172875,
+            "image_url": "//assets.supremenewyork.com/176841/ca/pUIr4Nzq5YY.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176841/rc/pUIr4Nzq5YY.jpg",
+            "price": 15800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 12,
+            "category_name": "Sweatshirts"
+        }],
+        "Hats": [{
+            "name": "Faux Fur Camp Cap",
+            "id": 172888,
+            "image_url": "//assets.supremenewyork.com/178164/ca/SfXA_eS_uMU.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178164/rc/SfXA_eS_uMU.jpg",
+            "price": 5400,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 27,
+            "category_name": "Hats"
+        }, {
+            "name": "GORE-TEX Rain Hat",
+            "id": 172892,
+            "image_url": "//assets.supremenewyork.com/177335/ca/yj0ZanjmhaU.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177335/rc/yj0ZanjmhaU.jpg",
+            "price": 8800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 29,
+            "category_name": "Hats"
+        }, {
+            "name": "New Era® S Logo Beanie",
+            "id": 172884,
+            "image_url": "//assets.supremenewyork.com/177457/ca/RWI6Od2PQos.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177457/rc/RWI6Od2PQos.jpg",
+            "price": 3800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 30,
+            "category_name": "Hats"
+        }, {
+            "name": "NY Patch Beanie",
+            "id": 172889,
+            "image_url": "//assets.supremenewyork.com/177608/ca/QNikt2Fgs40.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177608/rc/QNikt2Fgs40.jpg",
+            "price": 3600,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 31,
+            "category_name": "Hats"
+        }, {
+            "name": "Washed Velvet Bell Hat",
+            "id": 172873,
+            "image_url": "//assets.supremenewyork.com/177347/ca/G3AmHayvezg.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177347/rc/G3AmHayvezg.jpg",
+            "price": 5800,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 28,
+            "category_name": "Hats"
+        }, {
+            "name": "Basic Beanie",
+            "id": 172877,
+            "image_url": "//assets.supremenewyork.com/177532/ca/SxIdfZq2U0Q.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177532/rc/SxIdfZq2U0Q.jpg",
+            "price": 3400,
+            "sale_price": 0,
+            "new_item": false,
+            "position": 32,
+            "category_name": "Hats"
+        }],
+        "Shorts": [{
+            "name": "Ganesh Waffle Short",
+            "id": 172885,
+            "image_url": "//assets.supremenewyork.com/176972/ca/rFmdlgDrB0w.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176972/rc/rFmdlgDrB0w.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 26,
+            "category_name": "Shorts"
+        }],
+        "new": [{
+            "name": "Ganesh Faux Fur Jacket",
+            "id": 172887,
+            "image_url": "//assets.supremenewyork.com/178392/ca/gY420D_LY-0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178392/rc/gY420D_LY-0.jpg",
+            "price": 34800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 1,
+            "category_name": "Jackets"
+        }, {
+            "name": "Pinstripe Panel Sports Parka",
+            "id": 172893,
+            "image_url": "//assets.supremenewyork.com/178384/ca/iybBngzvU-w.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178384/rc/iybBngzvU-w.jpg",
+            "price": 23800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 2,
+            "category_name": "Jackets"
+        }, {
+            "name": "Stripe Shirt",
+            "id": 172891,
+            "image_url": "//assets.supremenewyork.com/176415/ca/TONglf3nq-I.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176415/rc/TONglf3nq-I.jpg",
+            "price": 12800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 7,
+            "category_name": "Shirts"
+        }, {
+            "name": "Stripe Velour L/S Polo",
+            "id": 172882,
+            "image_url": "//assets.supremenewyork.com/177134/ca/6OGiCk5r0mc.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177134/rc/6OGiCk5r0mc.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 13,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "Ganesh L/S Thermal",
+            "id": 172886,
+            "image_url": "//assets.supremenewyork.com/176982/ca/-_vUSd9JrZ4.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176982/rc/-_vUSd9JrZ4.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 14,
+            "category_name": "Tops/Sweaters"
+        }, {
+            "name": "Disturbed Zip Up Hooded Sweatshirt",
+            "id": 172883,
+            "image_url": "//assets.supremenewyork.com/176891/ca/UnFGLpvE8o0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176891/rc/UnFGLpvE8o0.jpg",
+            "price": 16800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 9,
+            "category_name": "Sweatshirts"
+        }, {
+            "name": "NY Hooded Sweatshirt",
+            "id": 172894,
+            "image_url": "//assets.supremenewyork.com/176939/ca/d2HKE1xUVD0.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176939/rc/d2HKE1xUVD0.jpg",
+            "price": 16800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 10,
+            "category_name": "Sweatshirts"
+        }, {
+            "name": "Ganesh Waffle Short",
+            "id": 172885,
+            "image_url": "//assets.supremenewyork.com/176972/ca/rFmdlgDrB0w.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/176972/rc/rFmdlgDrB0w.jpg",
+            "price": 11800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 26,
+            "category_name": "Shorts"
+        }, {
+            "name": "New Era® S Logo Beanie",
+            "id": 172884,
+            "image_url": "//assets.supremenewyork.com/177457/ca/RWI6Od2PQos.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177457/rc/RWI6Od2PQos.jpg",
+            "price": 3800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 30,
+            "category_name": "Hats"
+        }, {
+            "name": "Faux Fur Camp Cap",
+            "id": 172888,
+            "image_url": "//assets.supremenewyork.com/178164/ca/SfXA_eS_uMU.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178164/rc/SfXA_eS_uMU.jpg",
+            "price": 5400,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 27,
+            "category_name": "Hats"
+        }, {
+            "name": "NY Patch Beanie",
+            "id": 172889,
+            "image_url": "//assets.supremenewyork.com/177608/ca/QNikt2Fgs40.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177608/rc/QNikt2Fgs40.jpg",
+            "price": 3600,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 31,
+            "category_name": "Hats"
+        }, {
+            "name": "GORE-TEX Rain Hat",
+            "id": 172892,
+            "image_url": "//assets.supremenewyork.com/177335/ca/yj0ZanjmhaU.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/177335/rc/yj0ZanjmhaU.jpg",
+            "price": 8800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 29,
+            "category_name": "Hats"
+        }, {
+            "name": "Supreme (Vol 2) Book ",
+            "id": 172890,
+            "image_url": "//assets.supremenewyork.com/180530/ca/x-FK_pgtJeE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/180530/rc/x-FK_pgtJeE.jpg",
+            "price": 5000,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 0,
+            "category_name": "Accessories"
+        }, {
+            "name": "Plated Dumbbell",
+            "id": 172895,
+            "image_url": "//assets.supremenewyork.com/178458/ca/0lHRUqLAsZE.jpg",
+            "image_url_hi": "//assets.supremenewyork.com/178458/rc/0lHRUqLAsZE.jpg",
+            "price": 14800,
+            "sale_price": 0,
+            "new_item": true,
+            "position": 38,
+            "category_name": "Accessories"
+        }]
+    },
+    "last_mobile_api_update": "2015-02-06T14:47:32.034-05:00",
+    "release_date": "11/21/2019",
+    "release_week": "13FW19"
+}
