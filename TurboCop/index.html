@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TurboCop</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js 'unsafe-inline';" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal fade courier-new color-white" id="inputModal">
+            <div class="modal-dialog background-black modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal body -->
+                    <div class="modal-body background-black">
+                        <pre class="color-white">Enter new value for <b id="variableName">VARIABLE</b></pre>
+                        <pre class="color-white" id="restriction"></pre>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" id="variableInput">
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Accept</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center">
+            <h1 class="display-1 supreme-style text-center" id="turboCopHeading"><mark class="background-red color-white">TurboCop</mark></h1>
+            <br>
+            <p class="status-message courier-new color-white" id="statusMessage"></p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 main-menu">
+                </div>
+                <div class="col-sm-4 main-menu">
+                    <a class="courier-new color-white onhover-red" id="buyButton">Buy</a>
+                    <br>
+                    <a class="courier-new color-white onhover-red" id="findIdButton">Find ID</a>
+                    <br>
+                    <a class="courier-new color-white onhover-red" id="findDropButton">Find out what's dropping</a>
+                    <br>
+                    <a class="courier-new color-white onhover-red" id="configureButton">Configure TurboCop</a>
+                </div>
+                <div class="col-sm-4 main-menu">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 settings-menu">
+                    <ul class="list-group courier-new color-white config-list">
+                        <li class="list-group-item"><b>Full Name: </b><a class="onhover-red" id="configName"></a></li>
+                        <li class="list-group-item"><b>Email Address: </b><a class="onhover-red" id="configEmail"></a></li>
+                        <li class="list-group-item"><b>Phone Number: </b><a class="onhover-red" id="configTel"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 settings-menu">
+                    <ul class="list-group courier-new color-white config-list">
+                        <li class="list-group-item"><b>Street Address: </b><a class="onhover-red" id="configAddress"></a></li>
+                        <li class="list-group-item"><b>Apt/Suite/etc Number: </b><a class="onhover-red" id="configApt"></a></li>
+                        <li class="list-group-item"><b>Zip Code: </b><a class="onhover-red" id="configZip"></a></li>
+                        <li class="list-group-item"><b>City: </b><a class="onhover-red" id="configCity"></a></li>
+                        <li class="list-group-item"><b>State/Province: </b><a class="onhover-red" id="configCity"></a></li>
+                        <li class="list-group-item"><b>Country: </b><a class="onhover-red" id="configCountry"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 settings-menu">
+                    <ul class="list-group courier-new color-white config-list">
+                        <li class="list-group-item"><b>Card Number: </b><a class="onhover-red" id="configCardNumber"></a></li>
+                        <li class="list-group-item"><b>Expiration Month: </b><a class="onhover-red" id="configExpMonth"></a></li>
+                        <li class="list-group-item"><b>Expiration Year: </b><a class="onhover-red" id="configExpYear"></a></li>
+                        <li class="list-group-item"><b>CVV: </b><a class="onhover-red" id="configCVV"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center py-3 courier-new color-white">
+            <sub id="copyrightMessage">Copyright 2019 Dmitry Pleshkov. All Rights Reserved.</sub>
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

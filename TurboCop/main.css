@@ -1,0 +1,54 @@
+.supreme-style {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+}
+
+.courier-new {
+    font-family: "Courier New";
+}
+
+.jumbotron {
+    background-color: black;
+}
+body {
+    background-color: black;
+}
+.color-white {
+    color: white !important;
+}
+.background-red {
+    background-color: red;
+}
+.background-black {
+    background-color: black;
+}
+.onhover-red:hover {
+    background-color:red;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.main-menu {
+    display: none;
+}
+#turboCopHeading {
+    display: none;
+}
+.settings-menu {
+    display: none;
+}
+.config-list {
+    background-color: black;
+}
+li:not(:last-child) {
+    padding-bottom: 0px !important;
+}
+.list-group-item {
+    background-color: black !important;
+}
