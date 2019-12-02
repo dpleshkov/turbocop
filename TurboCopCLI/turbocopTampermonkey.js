@@ -86,7 +86,7 @@
             }
         }, 500);
     }
-    if (window.localStorage.getItem("checkout_on_next_load") == "yeah" && window.location.href.includes("checkout")) {
+    if (window.localStorage.getItem("checkout_on_next_load") == "yeah" && window.location.href.includes("/checkout")) {
         autoFill();
         window.localStorage.setItem("checkout_on_next_load", "no");
     }

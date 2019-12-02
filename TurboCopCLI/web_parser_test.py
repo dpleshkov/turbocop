@@ -3,7 +3,7 @@ from SupremeWebParser import *
 parser = SupremeWebParser()
 parser.target_names = ["Scatter Text Crewneck", "International Headband"]
 parser.target_style_names = ["Navy", "Orange"]
-parser.target_size_names = ["Medium"]
+parser.target_size_names = ["Medium", "N/A"]
 parser.target_categories = ["new"]
 parser.target_matches = 2
 

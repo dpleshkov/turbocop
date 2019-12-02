@@ -1,21 +1,29 @@
 {
-  "name": "turbocop",
-  "version": "1.0.0",
-  "description": "Supreme shopping automaton",
-  "main": "main.js",
-  "scripts": {
-    "test": "electron ."
-  },
-  "author": "Dmitry Pleshkov",
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "cryptojs": "^2.5.3",
-    "electron": "^7.1.2",
-    "electron-rebuild": "^1.8.8",
-    "jquery": "^3.4.1",
-    "popper": "^1.0.1",
-    "popper.js": "^1.16.0"
-  },
-  "dependencies": {}
+    "name": "turbocop",
+    "version": "1.0.0",
+    "description": "Supreme shopping automaton",
+    "main": "main.js",
+    "scripts": {
+        "test": "electron ."
+    },
+    "author": "Dmitry Pleshkov",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "electron": "^7.1.2",
+        "electron-rebuild": "^1.8.8",
+        "jquery": "^3.4.1",
+        "popper": "^1.0.1",
+        "popper.js": "^1.16.0",
+        "crypto-js": "^3.1.9-1"
+    },
+    "dependencies": {
+        "crypto-js": "^3.1.9-1",
+        "bootstrap": "^4.3.1",
+        "electron": "^7.1.2",
+        "electron-rebuild": "^1.8.8",
+        "jquery": "^3.4.1",
+        "popper": "^1.0.1",
+        "popper.js": "^1.16.0"
+    }
 }
