@@ -14,11 +14,15 @@ class MenuAgent {
         $(".settings-menu").fadeOut(500);
         setTimeout(function() {
             $(".main-menu").fadeIn(500);
-            $("#statusMessage").text("What would you like to do?")
+            $("#statusMessage").text("What would you like to do?");
         }, 500)
     }
     static openSettingsMenu() {
-
+        $(".main-menu").fadeOut(500);
+        setTimeout(function() {
+            $(".settings-menu").fadeIn(500);
+            $("#statusMessage").text("Configure TurboCop");
+        }, 500)
     }
     static performInitialFadeIn() {
         $("#turboCopHeading").fadeIn(500);
@@ -28,7 +32,17 @@ class MenuAgent {
 
     }
 }
+class SettingsAgent {
+    static loadSettings() {
+        
+    }
+    static getConfig() {
+        
+    }
+}
 
 $(document).ready(function() {
     MenuAgent.performInitialFadeIn();
+    $("#turboCopHeading").click(MenuAgent.openMainMenu);
+    $("#configureButton").click(MenuAgent.openSettingsMenu);
 })
