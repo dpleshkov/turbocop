@@ -43,6 +43,12 @@ body {
 .settings-menu {
     display: none;
 }
+.buy-menu {
+    display: none;
+}
+.explorer-menu {
+    display: none;
+}
 .config-list {
     background-color: black;
 }

@@ -54,10 +54,3 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-ipcMain.on('get-password', (event, user) => {
-    event.returnValue = keytar.getPassword('io.github.turbocopbot', user);
-});
-
-ipcMain.on('set-password', (event, user, pass) => {
-    event.returnValue = keytar.replacePassword('io.github.turbocopbot', user, pass);
-});
