@@ -29,6 +29,9 @@
             "category": "public.app-category.developer-tools",
             "target": "dmg",
             "icon": "icon.png"
+        },
+        "win": {
+            "icon": "icon.png"
         }
     },
     "scripts": {
