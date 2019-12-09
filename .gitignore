@@ -4,3 +4,6 @@ TurboCop/node_modules
 node_modules
 .idea
 .idea/
+TurboCop/dist/
+/TurboCop/dist
+
