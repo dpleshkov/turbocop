@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <title>TurboCop</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
-    <!-- meta http-equiv="Content-Security-Policy" content="script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js 'unsafe-inline';" /-->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js 'unsafe-inline';">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="components/TurboCopMenuAgent.js"></script>
+    <script type="text/javascript" src="components/TurboCopProxyAgent.js"></script>
+    <script type="text/javascript" src="components/TurboCopSettingsAgent.js"></script>
 </head>
 
 <body>
@@ -20,12 +23,14 @@
                     <div class="modal-body background-black">
                         <pre class="color-white" id="modalDescription">Placeholder Text</pre>
                         <pre class="color-white" id="restriction"></pre>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="" id="variableInput">
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Accept</button>
+                        <form id="variableInputForm">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" id="variableInput">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Accept</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
 
                 </div>
@@ -100,9 +105,9 @@
                 </div>
                 <div class="col-sm-4 explorer-menu">
                     <div class="input-group">
-                        <input type="text" class="form-control courier-new" placeholder="Type here to search" id="explorerSearchInput">
+                        <input type="text" class="form-control courier-new" placeholder="Search by item name" id="explorerSearchInput" autofocus>
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-danger courier-new">Search</button>
+                            <button type="button" class="btn btn-danger courier-new">Go</button>
                         </div>
                     </div>
                     <div class="list-group" id="explorerResults">

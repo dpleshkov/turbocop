@@ -1,10 +1,14 @@
+
+@font-face {
+  font-family: Supreme;
+  src: url(src/futura-medium-italic.ttf);
+}
 .supreme-style {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-family: Supreme, "Trebuchet MS", Arial, sans-serif; 
     font-style: italic;
     font-weight: 700;
     color: white;
 }
-
 .courier-new {
     font-family: "Courier New";
 }
@@ -27,6 +31,9 @@ body {
 .onhover-red:hover {
     background-color:red;
 }
+.onhover-red {
+    cursor: pointer;
+}
 .footer {
   position: fixed;
   left: 0;
@@ -39,6 +46,7 @@ body {
 }
 #turboCopHeading {
     display: none;
+    cursor: pointer;
 }
 .settings-menu {
     display: none;
