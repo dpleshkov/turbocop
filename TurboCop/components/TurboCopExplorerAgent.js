@@ -1,23 +1,22 @@
 class TurboCopExplorerAgent {
     static filterFromSearch(stock) {
-        console.log("bruh")
         var query = $("#explorerSearchInput").val().toLowerCase();
         var keywords = query.split(" ");
-        var results = [];
+        var results = new Set();
+        var resultNames = new Set();
         for (let categoryIndex in stock.products_and_categories) {
             var category = stock.products_and_categories[categoryIndex];
             for (let itemIndex in category) {
                 var item = category[itemIndex];
                 for (let keywordIndex in keywords) {
                     let keyword = keywords[keywordIndex];
-                    if (item.name.toLowerCase().includes(keyword)) {
-                        console.log(item.name.toLowerCase());
-                        results.push(item);
+                    if (item.name.toLowerCase().includes(keyword) && !resultNames.has(item.name)) {
+                        results.add(item);
+                        resultNames.add(item.name);
                     }
                 }
             }
         }
-        console.log(results);
         $("#explorerResults").empty();
         results.forEach(function(item) {
             var div = document.createElement("div");
