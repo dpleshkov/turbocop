@@ -18,6 +18,7 @@
 }
 body {
     background-color: black;
+    overflow: hidden;
 }
 .color-white {
     color: white !important;
@@ -65,4 +66,17 @@ li:not(:last-child) {
 }
 .list-group-item {
     background-color: black !important;
+}
+#explorerResults {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {     
+        background-color: #000;
+        width: .8em
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+        background: white;
 }

@@ -27,10 +27,10 @@ $(document).ready(function () {
     $("#configureButton").click(TurboCopMenuAgent.openSettingsMenu);
     $("#buyButton").click(TurboCopMenuAgent.openBuyMenu);
     $("#explorerButton").click(TurboCopMenuAgent.openExplorerMenu);
-    $("#variableInputForm").submit(function(evt) {
+    $("#variableInputForm").submit(function (evt) {
         $("#inputModal").modal("hide");
         evt.preventDefault();
-    })
+    });
     TurboCopSettingsAgent.bindEvents();
     TurboCopSettingsAgent.updateSettingsDisplay();
     TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/mobile_stock.json", function (stock) {
@@ -38,5 +38,23 @@ $(document).ready(function () {
     });
     TurboCopProxyAgent.getUSMobileStockJSON(function (stock) {
         americaMobileStock = stock;
-    })
+        $("#explorerSearchButton").click(function (evt) {
+            var height = $(document).height();
+            height = height - ($("#copyrightMessage").height()) - $("#explorerResults").offset().top;
+            $("#explorerResults").css({
+                'max-height': height.toString(),
+                'height': height.toString()
+            });
+            TurboCopExplorerAgent.filterFromSearch(stock);
+        });
+        $("#explorerSearchInput").on("keyup", function (evt) {
+            var height = $(document).height();
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerResults").offset().top;
+            $("#explorerResults").css({
+                'max-height': height.toString(),
+                'height': height.toString()
+            });
+            TurboCopExplorerAgent.filterFromSearch(stock);
+        })
+    });
 })
