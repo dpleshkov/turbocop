@@ -102,7 +102,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 explorer-menu">
-                    <p class="courier-new color-white">The TurboCop Item Explorer is best used in-between Supreme drops in Europe and America. Use it to find out what's dropping in North America but most importantly, to find out the exact item names, style names, and size names (for accessories).</p>
+                    <p class="courier-new color-white">The TurboCop Item Explorer is best used in-between Supreme drops in Europe and America. Use it to find out what's going dropping in North America but most importantly, to find out the exact item names, style names, and size names (for accessories).</p>
                 </div>
                 <div class="col-sm-4 explorer-menu">
                     <div class="input-group">
@@ -115,6 +115,37 @@
                     </div>
                 </div>
                 <div class="col-sm-4 explorer-menu">
+                    <div class="card background-black courier-new color-white" id="explorerMoreInfo" style="overflow-y: auto;">
+                        <div class="card-header">
+                            <div class="media">
+                                <img src="img_avatar3.png" id="explorerMoreInfoImage">
+                                <div class="media-body" style="padding-left: 5%;">
+                                    <h4 id="explorerMoreInfoTitle"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 id="explorerMoreInfoPrice">Price loading...</h2>
+                            <div class="form-group">
+                                <label for="explorerStyleSelect">Select style</label>
+                                <select class="form-control" id="explorerStyleSelect">
+                                </select>
+                                <label for="explorerSizeSelect">Select size</label>
+                                <select class="form-control" id="explorerSizeSelect">
+                                </select>
+                                <br>
+                                <button type="button" class="btn btn-danger" style="width: 100%">Add to list</button>
+                            </div>
+                            <p id="explorerMoreInfoDescription"></p>
+                        </div>
+                    </div>
+                    <!--div class="media courier-new color-white background-black" id="explorerMoreInfo">
+                        <img src="img_avatar3.png" id="explorerMoreInfoImage">
+                        <div class="media-body">
+                            <b id="explorerMoreInfoTitle"></b>
+                            <p id="explorerMoreInfoDescription"></p>
+                        </div>
+                    </div-->
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ class TurboCopProxyAgent {
                         return;
                     } else {
                         console.log("Success");
-                        callback(JSON.parse(body));
+                        callback(JSON.parse(body), url);
                     }
                 });
             }

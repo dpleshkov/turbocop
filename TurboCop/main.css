@@ -71,6 +71,9 @@ li:not(:last-child) {
     overflow-y: auto;
     overflow-x: hidden;
 }
+#explorerMoreInfo {
+    display: none;
+}
 ::-webkit-scrollbar {     
         background-color: #000;
         width: .8em

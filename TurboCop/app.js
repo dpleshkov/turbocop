@@ -21,6 +21,7 @@ class SupremeItem {
 
 var europeMobileStock;
 var americaMobileStock;
+var shoppingList = [];
 $(document).ready(function () {
     TurboCopMenuAgent.performInitialFadeIn();
     $("#turboCopHeading").click(TurboCopMenuAgent.openMainMenu);
@@ -34,14 +35,17 @@ $(document).ready(function () {
     TurboCopSettingsAgent.bindEvents();
     TurboCopSettingsAgent.updateSettingsDisplay();
     TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/mobile_stock.json", function (stock) {
-        europeMobileStock = stock
-    });
-    TurboCopProxyAgent.getUSMobileStockJSON(function (stock) {
-        americaMobileStock = stock;
+        europeMobileStock = stock;
         $("#explorerSearchButton").click(function (evt) {
             var height = $(document).height();
             height = height - ($("#copyrightMessage").height()) - $("#explorerResults").offset().top;
             $("#explorerResults").css({
+                'max-height': height.toString(),
+                'height': height.toString()
+            });
+            height = $(document).height();
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
+            $("#explorerMoreInfo").css({
                 'max-height': height.toString(),
                 'height': height.toString()
             });
@@ -54,7 +58,16 @@ $(document).ready(function () {
                 'max-height': height.toString(),
                 'height': height.toString()
             });
+            height = $(document).height();
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
+            $("#explorerMoreInfo").css({
+                'max-height': height.toString(),
+                'height': height.toString()
+            });
             TurboCopExplorerAgent.filterFromSearch(stock);
         })
+    });
+    TurboCopProxyAgent.getUSMobileStockJSON(function (stock) {
+        americaMobileStock = stock;
     });
 })
