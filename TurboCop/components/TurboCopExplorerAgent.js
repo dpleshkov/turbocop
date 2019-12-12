@@ -63,23 +63,37 @@ class TurboCopExplorerAgent {
                     height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
                     $("#explorerMoreInfo").css({
                         'max-height': height.toString(),
-                        'height': height.toString()
+                        'height': height.toString(),
+                        "overflow-x": "hide"
                     });
                     if (document.getElementById("explorerStyleSelect").childElementCount < stockInfo.styles.length) {
                         stockInfo.styles.forEach(function (style) {
                             var option = document.createElement("option");
                             option.innerHTML = style.name;
+                            option.nodeValue = style.name;
                             document.getElementById("explorerStyleSelect").appendChild(option);
                             if (style.sizes.length > document.getElementById("explorerSizeSelect").childElementCount) {
                                 style.sizes.forEach(function (size) {
                                     var option = document.createElement("option");
                                     option.innerHTML = size.name;
+                                    option.nodeValue = size.name;
                                     document.getElementById("explorerSizeSelect").appendChild(option);
                                 })
                             }
                         });
                         $("#addToListButton").unbind("click");
                         document.getElementById("addToListButton").removeAttribute("disabled");
+                        $("#addToListButton").on("click", function (evt) {
+                            var itemName = $("#explorerMoreInfoTitle").text();
+                            var styleName = $("#explorerStyleSelect option:selected").val();
+                            var sizeName = $("#explorerSizeSelect option:selected").val();
+                            window.shoppingList.push({
+                                itemName: itemName,
+                                styleName: styleName,
+                                sizeName: sizeName
+                            });
+                            document.getElementById("addToListButton").setAttribute("disabled", "disabled");
+                        })
                     }
                 }
             })
