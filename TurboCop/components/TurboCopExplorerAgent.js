@@ -50,6 +50,8 @@ class TurboCopExplorerAgent {
             'max-height': height.toString(),
             'height': height.toString()
         });
+        document.getElementById("explorerSizeSelect").innerHTML = "";
+        document.getElementById("explorerStyleSelect").innerHTML = "";
         if (item.price_euro) {
             TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/shop/" + String(item.id) + ".json", function (stockInfo, url) {
                 var url = url.split("/");
@@ -76,6 +78,8 @@ class TurboCopExplorerAgent {
                                 })
                             }
                         });
+                        $("#addToListButton").unbind("click");
+                        document.getElementById("addToListButton").removeAttribute("disabled");
                     }
                 }
             })
