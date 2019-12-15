@@ -91,14 +91,20 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4 buy-menu">
+                <div class="col-sm-2 buy-menu">
                 </div>
-                <div class="col-sm-4 buy-menu">
-                    <div class="list-group courier-new color-white" id="shoppingListDisplay">
-                    </div>
+                <div class="col-sm-8 buy-menu">
+                    <table class="table courier-new color-white" id="shoppingListDisplay" style="width: 100%">
+                        <tr>
+                            <th>Style</th>
+                            <th>Size</th>
+                            <th>Name</th>
+                            <th></th>
+                        </tr>
+                    </table>
                     <button class="courier-new color-white btn btn-danger" id="explorerBuyButton" style="width: 100%">Buy selected items</button>
                 </div>
-                <div class="col-sm-4 buy-menu">
+                <div class="col-sm-2 buy-menu">
                 </div>
             </div>
         </div>
@@ -125,7 +131,7 @@
                     <div class="card background-black courier-new color-white" id="explorerMoreInfo" style="overflow-y: auto;">
                         <div class="card-header">
                             <div class="media">
-                                <img src="img_avatar3.png" id="explorerMoreInfoImage">
+                                <img src="" id="explorerMoreInfoImage">
                                 <div class="media-body" style="padding-left: 5%;">
                                     <h4 id="explorerMoreInfoTitle"></h4>
                                 </div>

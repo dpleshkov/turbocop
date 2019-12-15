@@ -38,49 +38,49 @@ class TurboCopExplorerAgent {
         });
     }
     static renderItem(stockInfo, url) {
-                var url = url.split("/");
-                var filename = url[url.length - 1];
-                var itemID = filename.split(".")[0];
-                if (document.getElementById("explorerMoreInfoDescription").getAttribute("data-itemid") == itemID) {
-                    $("#explorerMoreInfoDescription").text(stockInfo.description);
-                    let height = $(document).height();
-                    height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
-                    $("#explorerMoreInfo").css({
-                        'max-height': height.toString(),
-                        'height': height.toString(),
-                        "overflow-x": "hide"
-                    });
-                    if (document.getElementById("explorerStyleSelect").childElementCount < stockInfo.styles.length) {
-                        stockInfo.styles.forEach(function (style) {
+        var url = url.split("/");
+        var filename = url[url.length - 1];
+        var itemID = filename.split(".")[0];
+        if (document.getElementById("explorerMoreInfoDescription").getAttribute("data-itemid") == itemID) {
+            $("#explorerMoreInfoDescription").text(stockInfo.description);
+            let height = $(document).height();
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
+            $("#explorerMoreInfo").css({
+                'max-height': height.toString(),
+                'height': height.toString(),
+                "overflow-x": "hide"
+            });
+            if (document.getElementById("explorerStyleSelect").childElementCount < stockInfo.styles.length) {
+                stockInfo.styles.forEach(function (style) {
+                    var option = document.createElement("option");
+                    option.innerHTML = style.name;
+                    option.nodeValue = style.name;
+                    document.getElementById("explorerStyleSelect").appendChild(option);
+                    if (style.sizes.length > document.getElementById("explorerSizeSelect").childElementCount) {
+                        style.sizes.forEach(function (size) {
                             var option = document.createElement("option");
-                            option.innerHTML = style.name;
-                            option.nodeValue = style.name;
-                            document.getElementById("explorerStyleSelect").appendChild(option);
-                            if (style.sizes.length > document.getElementById("explorerSizeSelect").childElementCount) {
-                                style.sizes.forEach(function (size) {
-                                    var option = document.createElement("option");
-                                    option.innerHTML = size.name;
-                                    option.nodeValue = size.name;
-                                    document.getElementById("explorerSizeSelect").appendChild(option);
-                                })
-                            }
-                        });
-                        $("#addToListButton").unbind("click");
-                        document.getElementById("addToListButton").removeAttribute("disabled");
-                        $("#addToListButton").on("click", function (evt) {
-                            var itemName = $("#explorerMoreInfoTitle").text();
-                            var styleName = $("#explorerStyleSelect option:selected").val();
-                            var sizeName = $("#explorerSizeSelect option:selected").val();
-                            window.shoppingList.push({
-                                itemName: itemName,
-                                styleName: styleName,
-                                sizeName: sizeName
-                            });
-                            document.getElementById("addToListButton").setAttribute("disabled", "disabled");
+                            option.innerHTML = size.name;
+                            option.nodeValue = size.name;
+                            document.getElementById("explorerSizeSelect").appendChild(option);
                         })
                     }
-                }
+                });
+                $("#addToListButton").unbind("click");
+                document.getElementById("addToListButton").removeAttribute("disabled");
+                $("#addToListButton").on("click", function (evt) {
+                    var itemName = $("#explorerMoreInfoTitle").text();
+                    var styleName = $("#explorerStyleSelect option:selected").val();
+                    var sizeName = $("#explorerSizeSelect option:selected").val();
+                    window.shoppingList.push({
+                        itemName: itemName,
+                        styleName: styleName,
+                        sizeName: sizeName
+                    });
+                    document.getElementById("addToListButton").setAttribute("disabled", "disabled");
+                })
             }
+        }
+    }
     static displayInfo(item) {
         $("#explorerMoreInfoImage").attr("src", "https:" + item.image_url_hi);
         $("#explorerMoreInfoTitle").text(String(item.name));
@@ -101,7 +101,7 @@ class TurboCopExplorerAgent {
         } else {
             $.ajax({
                 url: "https://www.supremenewyork.com/shop/" + String(item.id) + ".json"
-            }).done(function(stockInfo) {
+            }).done(function (stockInfo) {
                 TurboCopExplorerAgent.renderItem(stockInfo, "https://www.supremenewyork.com/shop/" + String(item.id) + ".json")
             });
         }
