@@ -37,23 +37,7 @@ class TurboCopExplorerAgent {
             document.getElementById("explorerResults").appendChild(div);
         });
     }
-    static displayInfo(item) {
-        $("#explorerMoreInfoImage").attr("src", "https:" + item.image_url_hi);
-        $("#explorerMoreInfoTitle").text(String(item.name));
-        document.getElementById("explorerMoreInfoDescription").setAttribute("data-itemid", item.id);
-        $("#explorerMoreInfoDescription").text("Loading item information, please wait...");
-        $("#explorerMoreInfo").show();
-        $("#explorerMoreInfoPrice").text("$" + item.price / 100);
-        let height = $(document).height();
-        height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
-        $("#explorerMoreInfo").css({
-            'max-height': height.toString(),
-            'height': height.toString()
-        });
-        document.getElementById("explorerSizeSelect").innerHTML = "";
-        document.getElementById("explorerStyleSelect").innerHTML = "";
-        if (item.price_euro) {
-            TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/shop/" + String(item.id) + ".json", function (stockInfo, url) {
+    static renderItem(stockInfo, url) {
                 var url = url.split("/");
                 var filename = url[url.length - 1];
                 var itemID = filename.split(".")[0];
@@ -96,7 +80,30 @@ class TurboCopExplorerAgent {
                         })
                     }
                 }
-            })
+            }
+    static displayInfo(item) {
+        $("#explorerMoreInfoImage").attr("src", "https:" + item.image_url_hi);
+        $("#explorerMoreInfoTitle").text(String(item.name));
+        document.getElementById("explorerMoreInfoDescription").setAttribute("data-itemid", item.id);
+        $("#explorerMoreInfoDescription").text("Loading item information, please wait...");
+        $("#explorerMoreInfo").show();
+        $("#explorerMoreInfoPrice").text("$" + item.price / 100);
+        let height = $(document).height();
+        height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerMoreInfo").offset().top;
+        $("#explorerMoreInfo").css({
+            'max-height': height.toString(),
+            'height': height.toString()
+        });
+        document.getElementById("explorerSizeSelect").innerHTML = "";
+        document.getElementById("explorerStyleSelect").innerHTML = "";
+        if (item.price_euro) {
+            TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/shop/" + String(item.id) + ".json", TurboCopExplorerAgent.renderItem)
+        } else {
+            $.ajax({
+                url: "https://www.supremenewyork.com/shop/" + String(item.id) + ".json"
+            }).done(function(stockInfo) {
+                TurboCopExplorerAgent.renderItem(stockInfo, "https://www.supremenewyork.com/shop/" + String(item.id) + ".json")
+            });
         }
     }
 }

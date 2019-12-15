@@ -23,7 +23,8 @@ class TurboCopMenuAgent {
         $(".explorer-menu").fadeOut(500);
         setTimeout(function () {
             $(".buy-menu").fadeIn(500);
-            $("#statusMessage").text("Enter known item info");
+            $("#statusMessage").text("View your shopping list then hit buy to buy items.");
+            TurboCopShoppingAgent.renderList();
         }, 500)
     }
     static openExplorerMenu() {

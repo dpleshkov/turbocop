@@ -49,7 +49,11 @@ $(document).ready(function () {
                 'max-height': height.toString(),
                 'height': height.toString()
             });
-            TurboCopExplorerAgent.filterFromSearch(stock);
+            if ($("#regionSelect option:selected").val() == "europe") {
+                TurboCopExplorerAgent.filterFromSearch(europeMobileStock);
+            } else {
+                TurboCopExplorerAgent.filterFromSearch(americaMobileStock);
+            }
         });
         $("#explorerSearchInput").on("keyup", function (evt) {
             var height = $(document).height();
@@ -64,8 +68,17 @@ $(document).ready(function () {
                 'max-height': height.toString(),
                 'height': height.toString()
             });
-            TurboCopExplorerAgent.filterFromSearch(stock);
+            if ($("#regionSelect option:selected").val() == "europe") {
+                TurboCopExplorerAgent.filterFromSearch(europeMobileStock);
+            } else {
+                TurboCopExplorerAgent.filterFromSearch(americaMobileStock);
+            }
         })
+    });
+    $("#explorerBuyButton").unbind("click");
+    $("#explorerBuyButton").click(function (evt) {
+        TurboCopShoppingAgent.buy();
+        document.getElementById("explorerBuyButton").setAttribute("disabled", "disabled");
     });
     TurboCopProxyAgent.getUSMobileStockJSON(function (stock) {
         americaMobileStock = stock;

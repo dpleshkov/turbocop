@@ -12,6 +12,7 @@
     <script type="text/javascript" src="components/TurboCopProxyAgent.js"></script>
     <script type="text/javascript" src="components/TurboCopSettingsAgent.js"></script>
     <script type="text/javascript" src="components/TurboCopExplorerAgent.js"></script>
+    <script type="text/javascript" src="components/TurboCopShoppingAgent.js"></script>
 </head>
 
 <body>
@@ -93,9 +94,9 @@
                 <div class="col-sm-4 buy-menu">
                 </div>
                 <div class="col-sm-4 buy-menu">
-                    <div class="list-group">
+                    <div class="list-group courier-new color-white" id="shoppingListDisplay">
                     </div>
-                    <a class="courier-new color-white btn btn-danger" id="buyButton" style="width: 100%">Buy selected items</a>
+                    <button class="courier-new color-white btn btn-danger" id="explorerBuyButton" style="width: 100%">Buy selected items</button>
                 </div>
                 <div class="col-sm-4 buy-menu">
                 </div>
@@ -104,7 +105,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 explorer-menu">
-                    <p class="courier-new color-white">The TurboCop Item Explorer is best used in-between Supreme drops in Europe and America. Use it to find out what's going dropping in North America but most importantly, to find out the exact item names, style names, and size names (for accessories).</p>
+                    <p class="courier-new color-white">Find out what's dropping in Europe before it drops in America. It is recommended to set search mode to Europe so you will get the more complete item list.</p>
+                    <select id="regionSelect" class="form-control courier-new">
+                        <option value="europe">European mobile_stock.json</option>
+                        <option value="america">American mobile_stock.json</option>
+                    </select>
                 </div>
                 <div class="col-sm-4 explorer-menu">
                     <div class="input-group">

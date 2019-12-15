@@ -73,6 +73,11 @@ li:not(:last-child) {
 }
 #explorerMoreInfo {
     display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#explorerMoreInfoTitle {
+    margin-right: 5%;
 }
 ::-webkit-scrollbar {     
         background-color: #000;
