@@ -38,7 +38,7 @@ $(document).ready(function () {
         europeMobileStock = stock;
         $("#explorerSearchButton").click(function (evt) {
             var height = $(document).height();
-            height = height - ($("#copyrightMessage").height()) - $("#explorerResults").offset().top;
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#explorerResults").offset().top;
             $("#explorerResults").css({
                 'max-height': height.toString(),
                 'height': height.toString()

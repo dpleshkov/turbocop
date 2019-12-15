@@ -77,6 +77,7 @@ class TurboCopExplorerAgent {
                         sizeName: sizeName
                     });
                     document.getElementById("addToListButton").setAttribute("disabled", "disabled");
+                    $("#addToListButton").text("Added");
                 })
             }
         }
