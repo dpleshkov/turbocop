@@ -41,6 +41,7 @@ class TurboCopMenuAgent {
                 height = height - (height - $("#copyrightMessage").offset().top) - $("#droplistIframe").offset().top;
                 $("#droplistIframe").css("height", height);
                 $("#droplistIframe").css("width", $("#frameContainer").width());
+                document.getElementById("droplistIframe").src = "https://supremecommunity.com/season/latest/droplists?bruh="+Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
             });
             $("#statusMessage").text("View droplists from Supreme Community");
         }, 500)
