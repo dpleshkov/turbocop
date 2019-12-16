@@ -28,6 +28,7 @@ $(document).ready(function () {
     $("#configureButton").click(TurboCopMenuAgent.openSettingsMenu);
     $("#buyButton").click(TurboCopMenuAgent.openBuyMenu);
     $("#explorerButton").click(TurboCopMenuAgent.openExplorerMenu);
+    $("#droplistButton").click(TurboCopMenuAgent.openDroplistMenu);
     $("#variableInputForm").submit(function (evt) {
         $("#inputModal").modal("hide");
         evt.preventDefault();

@@ -55,6 +55,9 @@ body {
 .buy-menu {
     display: none;
 }
+.droplist-menu {
+    display: none;
+}
 .explorer-menu {
     display: none;
 }
@@ -87,4 +90,7 @@ li:not(:last-child) {
 ::-webkit-scrollbar-thumb:window-inactive,
 ::-webkit-scrollbar-thumb {
         background: white;
+}
+#droplistIframe {
+    width: 100%;
 }

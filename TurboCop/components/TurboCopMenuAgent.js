@@ -3,6 +3,7 @@ class TurboCopMenuAgent {
         $(".settings-menu").fadeOut(500);
         $(".buy-menu").fadeOut(500);
         $(".explorer-menu").fadeOut(500);
+        $(".droplist-menu").fadeOut(500);
         setTimeout(function () {
             $(".main-menu").fadeIn(500);
             $("#statusMessage").text("What would you like to do?");
@@ -12,6 +13,7 @@ class TurboCopMenuAgent {
         $(".main-menu").fadeOut(500);
         $(".buy-menu").fadeOut(500);
         $(".explorer-menu").fadeOut(500);
+        $(".droplist-menu").fadeOut(500);
         setTimeout(function () {
             $(".settings-menu").fadeIn(500);
             $("#statusMessage").text("Configure TurboCop");
@@ -21,16 +23,33 @@ class TurboCopMenuAgent {
         $(".main-menu").fadeOut(500);
         $(".settings-menu").fadeOut(500);
         $(".explorer-menu").fadeOut(500);
+        $(".droplist-menu").fadeOut(500);
         setTimeout(function () {
             $(".buy-menu").fadeIn(500);
             $("#statusMessage").text("View your shopping list then hit buy to buy items.");
             TurboCopShoppingAgent.renderList();
         }, 500)
     }
+    static openDroplistMenu() {
+        $(".main-menu").fadeOut(500);
+        $(".settings-menu").fadeOut(500);
+        $(".buy-menu").fadeOut(500);
+        $(".explorer-menu").fadeOut(500);
+        setTimeout(function () {
+            $(".droplist-menu").fadeIn(500, function () {
+                var height = $(document).height();
+                height = height - (height - $("#copyrightMessage").offset().top) - $("#droplistIframe").offset().top;
+                $("#droplistIframe").css("height", height);
+                $("#droplistIframe").css("width", $("#frameContainer").width());
+            });
+            $("#statusMessage").text("View droplists from Supreme Community");
+        }, 500)
+    }
     static openExplorerMenu() {
         $(".main-menu").fadeOut(500);
         $(".settings-menu").fadeOut(500);
         $(".buy-menu").fadeOut(500);
+        $(".droplist-menu").fadeOut(500);
         setTimeout(function () {
             $(".explorer-menu").fadeIn(500);
             $("#statusMessage").text("");
