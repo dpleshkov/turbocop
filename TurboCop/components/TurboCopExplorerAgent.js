@@ -67,6 +67,7 @@ class TurboCopExplorerAgent {
                 });
                 $("#addToListButton").unbind("click");
                 document.getElementById("addToListButton").removeAttribute("disabled");
+                $("#addToListButton").text("Add to list")
                 $("#addToListButton").on("click", function (evt) {
                     var itemName = $("#explorerMoreInfoTitle").text();
                     var styleName = $("#explorerStyleSelect option:selected").val();
