@@ -10,6 +10,9 @@ class TurboCopSettingsAgent {
                 case "CardNumber":
                     $("#config" + key).click(function (evt) {
                         TurboCopMenuAgent.performModalPrompt("Please enter your 16-digit credit card number.", function (input, index) {
+                            if (input == "Unspecified") {
+                                input = "";
+                            }
                             let uuid = window.localStorage.getItem("uuid");
                             window.localStorage.setItem(index, CryptoJS.AES.encrypt(input, uuid));
                             TurboCopSettingsAgent.updateSettingsDisplay();
@@ -19,6 +22,9 @@ class TurboCopSettingsAgent {
                 case "CVV":
                     $("#config" + key).click(function (evt) {
                         TurboCopMenuAgent.performModalPrompt("Please enter your 3 or 4-digit CVV", function (input, index) {
+                            if (input == "Unspecified") {
+                                input = "";
+                            }
                             let uuid = window.localStorage.getItem("uuid");
                             window.localStorage.setItem(index, CryptoJS.AES.encrypt(input, uuid));
                             TurboCopSettingsAgent.updateSettingsDisplay();
@@ -28,6 +34,9 @@ class TurboCopSettingsAgent {
                 default:
                     $("#config" + key).click(function (evt) {
                         TurboCopMenuAgent.performModalPrompt("Please enter your " + key.toLocaleLowerCase(), function (input, index) {
+                            if (input == "Unspecified") {
+                                input = "";
+                            }
                             let uuid = window.localStorage.getItem("uuid");
                             window.localStorage.setItem(index, CryptoJS.AES.encrypt(input, uuid));
                             TurboCopSettingsAgent.updateSettingsDisplay();
@@ -41,6 +50,9 @@ class TurboCopSettingsAgent {
         var config = TurboCopSettingsAgent.getConfig();
         Object.keys(config).forEach(function (key) {
             var value = config[key];
+            if (value.length == 0) {
+                value = "Unspecified";
+            }
             switch (key) {
                 case "CardNumber":
                     $("#config" + key).text("*".repeat(value.length - 4) + value.substr(value.length - 4));
