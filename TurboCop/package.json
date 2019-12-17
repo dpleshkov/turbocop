@@ -6,12 +6,7 @@
     "author": "Dmitry Pleshkov",
     "license": "UNLICENSED",
     "devDependencies": {
-        "bootstrap": "^4.3.1",
         "electron": "^7.1.2",
-        "jquery": "^3.4.1",
-        "popper": "^1.0.1",
-        "popper.js": "^1.16.0",
-        "crypto-js": "^3.1.9-1",
         "electron-builder": "^21.2.0"
     },
     "dependencies": {
@@ -19,7 +14,6 @@
         "crypto-js": "^3.1.9-1",
         "https-proxy-agent": "^3.0.1",
         "jquery": "^3.4.1",
-        "popper": "^1.0.1",
         "popper.js": "^1.16.0",
         "request": "^2.88.0"
     },

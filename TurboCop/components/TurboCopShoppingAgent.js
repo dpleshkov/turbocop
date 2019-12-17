@@ -1,7 +1,8 @@
 class TurboCopShoppingAgent {
-    static buy() {
-        var list = JSON.stringify(shoppingList);
-
+    static buy(list) {
+        $("#explorerBuyButton").text("Buy task started");
+        document.getElementById("explorerBuyButton").setAttribute("disabled", "disabled");
+        ipcRenderer.send("buy", list);
     }
     static renderList() {
         var list = document.getElementById("shoppingListDisplay")

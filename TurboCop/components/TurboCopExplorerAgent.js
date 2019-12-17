@@ -65,9 +65,6 @@ class TurboCopExplorerAgent {
                         })
                     }
                 });
-                $("#addToListButton").unbind("click");
-                document.getElementById("addToListButton").removeAttribute("disabled");
-                $("#addToListButton").text("Add to list")
                 $("#addToListButton").on("click", function (evt) {
                     var itemName = $("#explorerMoreInfoTitle").text();
                     var styleName = $("#explorerStyleSelect option:selected").val();
@@ -98,6 +95,15 @@ class TurboCopExplorerAgent {
         });
         document.getElementById("explorerSizeSelect").innerHTML = "";
         document.getElementById("explorerStyleSelect").innerHTML = "";
+        $("#addToListButton").unbind("click");
+        document.getElementById("addToListButton").removeAttribute("disabled");
+        $("#addToListButton").text("Add to list")
+        for (let itemIndex in shoppingList) {
+            if (shoppingList[itemIndex].itemName == item.name) {
+                document.getElementById("addToListButton").setAttribute("disabled", "disabled");
+                $("#addToListButton").text("Added");
+            }
+        }
         if (item.price_euro) {
             TurboCopProxyAgent.makeEUWebRequest("https://www.supremenewyork.com/shop/" + String(item.id) + ".json", TurboCopExplorerAgent.renderItem)
         } else {

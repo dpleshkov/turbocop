@@ -78,8 +78,7 @@ $(document).ready(function () {
     });
     $("#explorerBuyButton").unbind("click");
     $("#explorerBuyButton").click(function (evt) {
-        TurboCopShoppingAgent.buy();
-        document.getElementById("explorerBuyButton").setAttribute("disabled", "disabled");
+        TurboCopShoppingAgent.buy(shoppingList);
     });
     TurboCopProxyAgent.getUSMobileStockJSON(function (stock) {
         americaMobileStock = stock;

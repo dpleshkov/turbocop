@@ -51,10 +51,11 @@ class TurboCopMenuAgent {
         $(".settings-menu").fadeOut(500);
         $(".buy-menu").fadeOut(500);
         $(".droplist-menu").fadeOut(500);
+        $("#explorerMoreInfo").hide();
         setTimeout(function () {
             $(".explorer-menu").fadeIn(500);
             $("#statusMessage").text("");
-        }, 500)
+        }, 500);
     }
     static performInitialFadeIn() {
         $("#turboCopHeading").fadeIn(500);
