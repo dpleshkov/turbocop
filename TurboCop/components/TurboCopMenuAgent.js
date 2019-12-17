@@ -28,6 +28,9 @@ class TurboCopMenuAgent {
             $(".buy-menu").fadeIn(500);
             $("#statusMessage").text("View your shopping list then hit buy to buy items.");
             TurboCopShoppingAgent.renderList();
+            var height = $(document).height();
+            height = height - (height - $("#copyrightMessage").offset().top) - $("#shopping").offset().top;
+            $("#droplistIframe").css("height", height);
         }, 500)
     }
     static openDroplistMenu() {
