@@ -94,7 +94,7 @@ li:not(:last-child) {
 #droplistIframe {
     width: 100%;
 }
-#shoppingListDiplayContainer {
-    overflow-y: scroll;
+#shoppingListDisplayContainer {
+    overflow-y: auto;
     overflow-x: hidden;
 }

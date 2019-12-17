@@ -25,12 +25,13 @@ class TurboCopMenuAgent {
         $(".explorer-menu").fadeOut(500);
         $(".droplist-menu").fadeOut(500);
         setTimeout(function () {
-            $(".buy-menu").fadeIn(500);
+            $(".buy-menu").fadeIn(500, function () {
+                var height = $(document).height();
+                height = height - (height - $("#copyrightMessage").offset().top) - $("#shoppingListDisplayContainer").offset().top;
+                $("#shoppingListDisplayContainer").css("height", height-5);
+            });
             $("#statusMessage").text("View your shopping list then hit buy to buy items.");
             TurboCopShoppingAgent.renderList();
-            var height = $(document).height();
-            height = height - (height - $("#copyrightMessage").offset().top) - $("#shopping").offset().top;
-            $("#droplistIframe").css("height", height);
         }, 500)
     }
     static openDroplistMenu() {
@@ -44,7 +45,7 @@ class TurboCopMenuAgent {
                 height = height - (height - $("#copyrightMessage").offset().top) - $("#droplistIframe").offset().top;
                 $("#droplistIframe").css("height", height);
                 $("#droplistIframe").css("width", $("#frameContainer").width());
-                document.getElementById("droplistIframe").src = "https://supremecommunity.com/season/latest/droplists?bruh="+Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+                document.getElementById("droplistIframe").src = "https://supremecommunity.com/season/latest/droplists?bruh=" + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
             });
             $("#statusMessage").text("View droplists from Supreme Community");
         }, 500)
