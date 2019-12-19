@@ -98,3 +98,10 @@ li:not(:last-child) {
     overflow-y: auto;
     overflow-x: hidden;
 }
+#stdout {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+pre {
+    margin-bottom: 0px !important;
+}

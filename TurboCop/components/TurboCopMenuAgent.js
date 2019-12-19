@@ -4,6 +4,7 @@ class TurboCopMenuAgent {
         $(".buy-menu").fadeOut(500);
         $(".explorer-menu").fadeOut(500);
         $(".droplist-menu").fadeOut(500);
+        $(".console-menu").fadeOut(500);
         setTimeout(function () {
             $(".main-menu").fadeIn(500);
             $("#statusMessage").text("What would you like to do?");
@@ -19,6 +20,22 @@ class TurboCopMenuAgent {
             $("#statusMessage").text("Configure TurboCop");
         }, 500)
     }
+    static openConsoleMenu() {
+        $(".main-menu").fadeOut(500);
+        $(".settings-menu").fadeOut(500);
+        $(".explorer-menu").fadeOut(500);
+        $(".droplist-menu").fadeOut(500);
+        $(".buy-menu").fadeOut(500);
+        setTimeout(function () {
+            $(".console-menu").fadeIn(500, function () {
+                var height = $(document).height();
+                height = height - (height - $("#copyrightMessage").offset().top) - $("#stdout").offset().top;
+                $("#stdout").css("height", height-20);
+            });
+            $("#statusMessage").text("Bot task started.");
+            TurboCopShoppingAgent.renderList();
+        }, 500)
+    }
     static openBuyMenu() {
         $(".main-menu").fadeOut(500);
         $(".settings-menu").fadeOut(500);
@@ -28,7 +45,7 @@ class TurboCopMenuAgent {
             $(".buy-menu").fadeIn(500, function () {
                 var height = $(document).height();
                 height = height - (height - $("#copyrightMessage").offset().top) - $("#shoppingListDisplayContainer").offset().top;
-                $("#shoppingListDisplayContainer").css("height", height-5);
+                $("#shoppingListDisplayContainer").css("height", height-20);
             });
             $("#statusMessage").text("View your shopping list then hit buy to buy items.");
             TurboCopShoppingAgent.renderList();
