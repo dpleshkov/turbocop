@@ -74,7 +74,7 @@ function autoFill(evt) {
     document.querySelector('option[value="' + config["ExpMonth"] + '"]').setAttribute("selected", "selected")
     document.querySelector('option[value="' + config["ExpYear"] + '"]').selected = true;
     document.querySelector('input[placeholder="CVV"]').value = config["CVV"];
-    document.querySelector("#order_terms").click();
+    document.querySelector("#order_terms").checked = true;
 }
 if (window.location.href.includes("checkout")) {
     autoFill();
@@ -86,6 +86,6 @@ if (window.location.href.includes("checkout")) {
     if (itemsInCart) {
         window.location.href = "https://www.supremenewyork.com/checkout";
     } else {
-        console.log("everything is out of stock :(");
+        alert("All the styles and sizes for the item you want are out of stock :(. You may close this window.");
     }
 }
