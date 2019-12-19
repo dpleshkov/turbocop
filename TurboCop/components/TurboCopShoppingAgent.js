@@ -4,28 +4,32 @@ class TurboCopShoppingAgent {
         $("#stdout").empty();
         document.getElementById("explorerBuyButton").setAttribute("disabled", "disabled");
         TurboCopMenuAgent.openConsoleMenu();
-        if (list.length <= 0) {
-            TurboCopShoppingAgent.print("Empty shopping list. Aborting task.");
-            TurboCopShoppingAgent.print("Task aborted. Click the logo to return to the main menu.");
-            return;
-        }
-        TurboCopShoppingAgent.print("Received " + String(list.length) + " item(s). Prioritizing first one.");
-        TurboCopShoppingAgent.print("Looking for item IDs...");
-        TurboCopShoppingAgent.print("Looking in local mobile_stock.json");
-        list = TurboCopShoppingAgent.getItemIDs(list, americaMobileStock);
-        if (!list[0].itemID) {
-            TurboCopShoppingAgent.print("Didn't find item ID locally. Looking in web mobile_stock.json.");
-            while (!list[0].itemID) {
-                $.ajax({
-                    url: "https://www.supremenewyork.com/mobile_stock.json",
-                    success: function (result) {
-                        list = TurboCopShoppingAgent.getItemIDs(list, result);
-                    },
-                    async: false
-                })
+        setTimeout(function () {
+            if (list.length <= 0) {
+                TurboCopShoppingAgent.print("Empty shopping list. Aborting task.");
+                TurboCopShoppingAgent.print("Task aborted. Click the logo to return to the main menu.");
+                return;
             }
-        }
-        TurboCopShoppingAgent.buyStage2(list);
+            TurboCopShoppingAgent.print("Received " + String(list.length) + " item(s). Prioritizing first one.");
+            TurboCopShoppingAgent.print("Looking for item IDs...");
+            TurboCopShoppingAgent.print("Looking in local mobile_stock.json");
+            list = TurboCopShoppingAgent.getItemIDs(list, americaMobileStock);
+            setTimeout(function () {
+                if (!list[0].itemID) {
+                    TurboCopShoppingAgent.print("Didn't find item ID locally. Looking in web mobile_stock.json.");
+                    while (!list[0].itemID) {
+                        $.ajax({
+                            url: "https://www.supremenewyork.com/mobile_stock.json",
+                            success: function (result) {
+                                list = TurboCopShoppingAgent.getItemIDs(list, result);
+                            },
+                            async: false
+                        })
+                    }
+                }
+                TurboCopShoppingAgent.buyStage2(list);
+            }, 100)
+        }, 500)
 
     }
     static buyStage2(list) { // Stage 2, find item and size ids
@@ -58,7 +62,10 @@ class TurboCopShoppingAgent {
         }
         if (list[0].sizeID) {
             TurboCopShoppingAgent.print("Found style and size IDs. Now sending task to main.js .");
-            ipcRenderer.send("buy", {list:list, config:TurboCopSettingsAgent.getConfig()});
+            ipcRenderer.send("buy", {
+                list: list,
+                config: TurboCopSettingsAgent.getConfig()
+            });
         }
     }
     static getItemIDs(list, stock) {
