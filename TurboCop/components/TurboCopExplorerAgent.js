@@ -59,7 +59,11 @@ class TurboCopExplorerAgent {
                     if (style.sizes.length > document.getElementById("explorerSizeSelect").childElementCount) {
                         style.sizes.forEach(function (size) {
                             var option = document.createElement("option");
-                            option.innerHTML = size.name;
+                            if (size.stock_level == 0) {
+                                option.innerHTML = size.name; 
+                            } else {
+                                option.innerHTML = size.name;
+                            }
                             option.nodeValue = size.name;
                             document.getElementById("explorerSizeSelect").appendChild(option);
                         })
