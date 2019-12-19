@@ -75,7 +75,7 @@ function turbocop() {
         document.querySelector('option[value="' + turbocopconfig["ExpMonth"] + '"]').setAttribute("selected", "selected")
         document.querySelector('option[value="' + turbocopconfig["ExpYear"] + '"]').selected = true;
         document.querySelector('input[placeholder="CVV"]').value = turbocopconfig["CVV"];
-        document.querySelector("#order_terms").checked = true;
+        document.querySelectorAll('.iCheck-helper')[1].click();
     }
     if (window.location.href.includes("checkout")) {
         setTimeout(autoFill, 150);
